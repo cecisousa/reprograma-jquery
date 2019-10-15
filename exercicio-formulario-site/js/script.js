@@ -54,6 +54,7 @@ $(function () {
             $("#classificacao").show();
             $("#valor-entrada").hide();
             $("#entrada-franca").show();
+
         } else if (selected == "Dança") {
             $("#titulo").show();
             $("#sinopse").show();
@@ -89,6 +90,7 @@ $(function () {
             $("#classificacao").show();
             $("#valor-entrada").hide();
             $("#entrada-franca").show();
+            
         } else if (selected == "Música") {
             $("#titulo").show();
             $("#sinopse").show();
