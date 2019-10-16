@@ -1,4 +1,22 @@
 $(function(){
+
+    function configurateHover() {
+
+        $(".card-title").off("mouseenter");
+        $(".card-title").on("mouseenter",
+            function(){
+                $(this).css("color", "blue")
+            }
+        );
+    
+        $(".card-title").off("mouseleave");
+        $(".card-title").on("mouseleave",
+            function(){
+                $(this).css("color", "black")
+            }
+        );
+
+    }
     
     $("#btnToggle").click(function(){
         
@@ -21,6 +39,9 @@ $(function(){
     $("#btnNovaLinha").click(function(){
         let novaLinha = $(".linha-de-cards").html();
         $("#btnToggle").before(novaLinha);
+        configurateHover()
+        // outra forma de criar a linha:
+        // $(".linha-de-cards").after('<div class="row">' + novaLinha + '</div>')
     });
 
 });
