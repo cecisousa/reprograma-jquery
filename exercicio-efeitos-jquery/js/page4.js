@@ -14,6 +14,8 @@ $(function(){
 
     $(".card").click(function(){
         $(this).css("display", "none");
+        // outra forma de fazer:
+        // $(this).hide();
     });
 
 });

@@ -17,6 +17,8 @@ $(function(){
         );
 
     }
+
+    configurateHover();
     
     $("#btnToggle").click(function(){
         
